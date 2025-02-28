@@ -43,6 +43,16 @@
 						</ul>
 					</nav>
 
+					<section id="api-response" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; color: #ffffff; width: 100%;">
+						<div class="container" style="max-width: 600px;">
+							<h2 style="color: #f8f8f8; margin-bottom: 10px; text-align: center;">Welcome Message</h2>
+							<p id="message" style="font-size: 18px; font-weight: bold; color: #ffeb3b; margin-bottom: 10px;">Loading...</p>
+							<p style="color: #f8f8f8;"><strong>Timestamp:</strong> <span id="timestamp">-</span></p>
+						</div>
+					</section>
+					
+					
+
 				<!-- Main -->
 					<div id="main">
 
@@ -213,6 +223,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					$.ajax({
+						url: "https://cyv8ll3q6j.execute-api.eu-north-1.amazonaws.com/prod/profile",
+						type: "GET",
+						success: function (response) {
+							let data = JSON.parse(response.body);
+							$("#message").text(data.message);
+							$("#timestamp").text(data.timestamp);
+						},
+						error: function (error) {
+							console.log("Error fetching API data:", error);
+							$("#message").text("Failed to load API response.");
+						}
+					});
+				});
+			</script>
+
 
 	</body>
 </html>
