@@ -1,10 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Saud Khan - Data Scientist</title>
+		<title>Saud Khan - Data Science Undergraduate</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfolio of Saud Khan, Data Science undergraduate with experience in machine learning, AI systems, and backend engineering." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Minor layout refinements for hero, project cards, and contact status -->
+		<style>
+			#intro .contact-links {
+				margin-top: 1.5rem;
+				font-size: 0.95rem;
+				opacity: 0.9;
+			}
+			#intro .contact-links a {
+				color: inherit;
+				text-decoration: none;
+				border-bottom: 1px dotted rgba(255,255,255,0.4);
+			}
+			#intro .contact-links a:hover {
+				border-bottom-color: rgba(255,255,255,0.9);
+			}
+			#intro .hero-icons {
+				margin-top: 1rem;
+			}
+			#intro .hero-profile {
+				width: 130px;
+				height: 130px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 0 auto 1.5rem auto;
+				border: 3px solid rgba(255,255,255,0.7);
+			}
+			#intro .hero-profile img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			#main .posts article.project-card {
+				transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+			}
+			#main .posts article.project-card:hover {
+				transform: translateY(-6px);
+				box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.35);
+				background-color: rgba(255,255,255,0.02);
+			}
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -12,14 +53,24 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
+				<!-- Intro / Hero -->
 					<div id="intro">
-						<h1>Saud Khan<br />
-						Data Scientist</h1>
-						<p>Innovative professional specializing in Machine Learning, Data Analysis, and Full-Stack Development, 
-							focused on harnessing data for impactful decision-making</p>
+						<div class="hero-profile">
+							<!-- Placeholder profile image; replace with your own hosted image if desired -->
+							<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Profile photo placeholder" />
+						</div>
+						<h1>Saud Khan</h1>
+						<p>Data Science undergraduate with hands-on experience in machine learning, AI system development, and backend engineering.</p>
+						<p class="contact-links">
+							<strong>Phone:</strong> <a href="tel:+923368140471">+92 336 8140471</a> &nbsp;|&nbsp;
+							<strong>Email:</strong> <a href="mailto:saudkhan1885@gmail.com">saudkhan1885@gmail.com</a>
+						</p>
+						<ul class="icons hero-icons">
+							<li><a href="https://github.com/Saudkhan1885" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/saud-khan-1885/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+						</ul>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="#about" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
 
@@ -31,67 +82,61 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="#main">About</a></li>
-							<li><a href="#skills">Skills</a></li>
+							<li class="active"><a href="#about">About</a></li>
+							<li><a href="#experience">Experience</a></li>
 							<li><a href="#projects">Projects</a></li>
-							<li><a href="#education">Education</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#certifications">Certifications &amp; Awards</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://github.com/Saudkhan1885" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/saud-khan-10258b190" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Saudkhan1885" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/saud-khan-1885/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
 						</ul>
 					</nav>
-
-					<section id="api-response" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; color: #ffffff; width: 100%;">
-						<div class="container" style="max-width: 600px;">
-							<h2 style="color: #f8f8f8; margin-bottom: 10px; text-align: center;">Welcome Message</h2>
-							<p id="message" style="font-size: 18px; font-weight: bold; color: #ffeb3b; margin-bottom: 10px;">Loading...</p>
-							<p style="color: #f8f8f8;"><strong>Timestamp:</strong> <span id="timestamp">-</span></p>
-						</div>
-					</section>
-					
 					
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
+						<!-- About & Education -->
+							<article id="about" class="post featured">
 								<header class="major">
 									<h2>About Me</h2>
-									<p>Data Science student at GIK Institute with expertise in machine learning, data analysis, and full-stack development.
-									Passionate about solving complex problems using data-driven approaches and developing innovative solutions.</p>
+									<p>Data Science undergraduate with hands-on experience in machine learning, AI system development, and backend engineering. Seeking opportunities to apply analytical and technical expertise to real-world problems while contributing to data-driven and AI-powered solutions in a professional environment.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/profile.jpg" alt="Profile Image" /></a>
-
+								<section>
+									<header>
+										<h3>Education</h3>
+									</header>
+									<p><strong>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI)</strong><br />
+									   BS Data Science &mdash; CGPA: 3.13 / 4.00</p>
+								</section>
 							</article>
 
-						<!-- Skills -->
-							<section id="skills">
+						<!-- Experience -->
+							<section id="experience">
 								<header class="major">
-									<h2>Skills</h2>
+									<h2>Experience</h2>
 								</header>
 								<div class="posts">
 									<article>
-										<h3>Programming Languages</h3>
-										<p>Python, Java, SQL, Node.js</p>
+										<header>
+											<h3>NESL-IT &mdash; Data Scientist Intern</h3>
+										</header>
+										<ul>
+											<li>Developed and evaluated machine learning models using preprocessing and feature engineering techniques.</li>
+											<li>Performed exploratory data analysis and visualization to derive actionable insights.</li>
+										</ul>
 									</article>
 									<article>
-										<h3>Machine Learning</h3>
-										<p>VGG16, ResNet34, CNN, Scikit-learn, TensorFlow, Keras</p>
-									</article>
-									<article>
-										<h3>Data Analysis</h3>
-										<p>Pandas, NumPy, Data Scraping, Insight Generation</p>
-									</article>
-									<article>
-										<h3>Big Data</h3>
-										<p>Hadoop, Kafka ,Spark ,Scala </p>
-									</article>
-									<article>
-										<h3>Full-Stack Development</h3>
-										<p>Backend API Development with Node.js, RESTful API Design</p>
+										<header>
+											<h3>IBM Pakistan &mdash; Software Developer</h3>
+										</header>
+										<p>Worked closely with employees on AI-driven and backend engineering initiatives.</p>
+										<ul>
+											<li>Designed and implemented RESTful backend APIs using Node.js for scalable applications.</li>
+											<li>Supported AI-driven automation and optimized data workflows for improved system efficiency.</li>
+										</ul>
 									</article>
 								</div>
 							</section>
@@ -102,93 +147,113 @@
 									<h2>Projects</h2>
 								</header>
 								<div class="posts">
-									<article>
+									<article class="project-card">
 										<header>
-											<h3>Plant Disease Detection Model</h3>
+											<h3>SpeechEcho &mdash; Real-Time Voice Cloning &amp; Speech Synthesis</h3>
 										</header>
-										<p>Built using VGG16 and CNN architectures for high-accuracy classification of plant diseases, helping farmers identify and treat crop issues efficiently.</p>
+										<p>Developed a real-time voice cloning and conversational speech synthesis system using PyTorch and XTTS-v2, with optimized preprocessing and inference pipelines for low-latency, high-quality synthesis. Trained on a custom South Asian accent dataset to help South Asian callers better understand customer support voices during phone conversations, addressing accent barriers and improving communication clarity.</p>
+										<ul class="actions">
+											<li><span class="button small">PyTorch</span></li>
+											<li><span class="button small">XTTS-v2</span></li>
+											<li><span class="button small">Real-Time Inference</span></li>
+										</ul>
 									</article>
-									<article>
+									<article class="project-card">
 										<header>
-											<h3>Stock Market Prediction</h3>
+											<h3>Retrieval-Augmented Generation System</h3>
+											<p><em>LangChain, FAISS</em></p>
 										</header>
-										<p>Developed machine learning models to forecast Pakistan Stock Exchange trends, providing valuable insights for investors.</p>
+										<p>Built an end-to-end RAG pipeline for research-paper-based question answering using LLMs, integrating a FAISS vector database for efficient semantic search and retrieval. Used Grafana and Prometheus to monitor query accuracy and analyze hallucination rates.</p>
+										<ul class="actions">
+											<li><span class="button small">LangChain</span></li>
+											<li><span class="button small">FAISS</span></li>
+											<li><span class="button small">LLMs</span></li>
+										</ul>
 									</article>
-									<article>
+									<article class="project-card">
 										<header>
-											<h3>Bank Management System</h3>
+											<h3>Plant Disease Detection</h3>
+											<p><em>CNN, VGG16</em></p>
 										</header>
-										<p>Python-based system for handling client transactions with secure data management and user-friendly interface.</p>
+										<p>Implemented transfer learning using VGG16 with data augmentation for accurate plant disease classification, and evaluated performance using precision, recall, and confusion matrix analysis.</p>
+										<ul class="actions">
+											<li><span class="button small">TensorFlow</span></li>
+											<li><span class="button small">CNN</span></li>
+											<li><span class="button small">Computer Vision</span></li>
+										</ul>
 									</article>
-									<article>
+									<article class="project-card">
 										<header>
-											<h3>Trinode Word Checker</h3>
+											<h3>New York Housing Price Prediction</h3>
 										</header>
-										<p>A word-checking tool leveraging tree node data structures for efficient text processing and validation.</p>
-									</article>
-									<article>
-										<header>
-											<h3>Backend Development for Al-Futtaim</h3>
-										</header>
-										<p>Developed Node.js APIs for managing offers and advertisements, improving system efficiency and user experience.</p>
+										<p>Performed data cleaning, feature engineering, and exploratory data analysis on the New York housing dataset, building and comparing regression models to predict housing prices with rigorous performance evaluation.</p>
+										<ul class="actions">
+											<li><span class="button small">Data Analysis</span></li>
+											<li><span class="button small">Regression</span></li>
+											<li><span class="button small">Python</span></li>
+										</ul>
 									</article>
 								</div>
 							</section>
 
-						<!-- Education -->
-							<section id="education">
+						<!-- Skills -->
+							<section id="skills">
 								<header class="major">
-									<h2>Education</h2>
+									<h2>Skills</h2>
 								</header>
 								<div class="posts">
 									<article>
-										<h3>Bachelor of Science in Data Science</h3>
-										<p>Ghulam Ishaq Khan Institute, Topi, KP (2022 - Current)</p>
+										<h3>Programming</h3>
+										<p>Python, Node.js, SQL</p>
 									</article>
 									<article>
-										<h3>Fsc in Computer Science</h3>
-										<p>Glorious College of Science and Technology, Swabi, KP (2020 - 2022)</p>
+										<h3>Machine Learning &amp; AI</h3>
+										<p>Deep Learning, CNNs, RNNs, Transformers, NLP, LLMs</p>
+									</article>
+									<article>
+										<h3>Frameworks</h3>
+										<p>PyTorch, TensorFlow, Scikit-learn</p>
+									</article>
+									<article>
+										<h3>Cloud &amp; Big Data</h3>
+										<p>AWS, Microsoft Azure, Spark, Hadoop, Kafka</p>
+									</article>
+									<article>
+										<h3>Other</h3>
+										<p>Data Analysis, Model Training, API Development</p>
+									</article>
+									<article>
+										<h3>Languages</h3>
+										<p>Urdu (Native), English (Fluent)</p>
 									</article>
 								</div>
-								
+							</section>
+
+						<!-- Certifications & Awards -->
+							<section id="certifications">
 								<header class="major">
-									<h2>Awards and Achievements</h2>
+									<h2>Certifications &amp; Awards</h2>
 								</header>
 								<div class="posts">
 									<article>
-										<h3>Student of the Year Award</h3>
-										<p>Received twice for academic excellence</p>
+										<h3>Certifications</h3>
+										<ul>
+											<li>Big Data (Spark, Scala, Kafka, Hadoop) &mdash; Udemy (2025)</li>
+											<li>Foundations: Data, Data, Everywhere &mdash; Google (2024)</li>
+										</ul>
 									</article>
 									<article>
-										<h3>Board Examination Achievement</h3>
-										<p>Ranked third in Computer Science in Mardan Board Examinations</p>
+										<h3>Honors &amp; Awards</h3>
+										<ul>
+											<li>Dean Honor List &mdash; FCSE, GIKI (2024)</li>
+											<li>3rd Position in Computer Science &mdash; BISE Mardan (2022)</li>
+										</ul>
 									</article>
 								</div>
 							</section>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
 						<section class="split contact">
 							<section class="alt">
 								<h3>Phone</h3>
@@ -196,13 +261,13 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="mailto:ksaud1885@gmail.com">ksaud1885@gmail.com</a></p>
+								<p><a href="mailto:saudkhan1885@gmail.com">saudkhan1885@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="https://github.com/Saudkhan1885" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/saud-khan-10258b190" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Saudkhan1885" class="icon brands alt fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/saud-khan-1885/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -223,24 +288,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<script>
-				$(document).ready(function () {
-					$.ajax({
-						url: "https://cyv8ll3q6j.execute-api.eu-north-1.amazonaws.com/prod/profile",
-						type: "GET",
-						success: function (response) {
-							let data = JSON.parse(response.body);
-							$("#message").text(data.message);
-							$("#timestamp").text(data.timestamp);
-						},
-						error: function (error) {
-							console.log("Error fetching API data:", error);
-							$("#message").text("Failed to load API response.");
-						}
-					});
-				});
-			</script>
 
 
 	</body>
